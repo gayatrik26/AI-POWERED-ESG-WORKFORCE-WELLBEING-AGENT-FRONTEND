@@ -176,15 +176,10 @@ npm run dev
 ## 📊 Execution Results
 ### Latest Run Summary
 - **Date:** 2025-04-01  
-- **Total Employees Processed:** 20  
+- **Total Employees Processed:** 12  
 - **Burnout Score Calculation Time:** 1.2s per employee  
-- **Emotion Recognition Accuracy:** 89.5% (ResNet50)  
-- **Keystroke Emotion Prediction Accuracy:** 87%  
-
-### Key Findings:
-- 4 employees flagged for high burnout risk 🚨
-- Workability score below threshold for 3 employees
-- Sentiment analysis detected 5 employees with negative email tone  
+- **Emotion Recognition Accuracy:** 78% (EfficientNetB0)  
+- **Emotion Recognition Accuracy:** 76% (CNN + RNN)
 
 ---
 
@@ -212,10 +207,6 @@ npm run dev
 ### **2️⃣ Audio Emotion Edge Cases**
 - Tested **whispered vs. shouted speech**  
 - Model misclassified **low-energy speech** as negative sentiment → Adjustment required  
-
-### **3️⃣ Sensor Data Anomalies**
-- Simulated **abnormal heart rate variations (spikes/drops)**  
-- Correctly flagged **sudden HR drop to 40 BPM as a risk event**  
 
 ---
 

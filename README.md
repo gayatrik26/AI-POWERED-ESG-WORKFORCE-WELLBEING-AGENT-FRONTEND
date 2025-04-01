@@ -184,9 +184,37 @@ npm run dev
 ---
 
 ## 🖥️ Execution Logs & Screenshots  
-- **[Screenshot: API Endpoints Execution](./screenshots/api_execution.png)**  
-- **[Screenshot: Burnout Heatmap](./screenshots/burnout_heatmap.png)**  
-- **[Execution Log](./logs/execution_log_2025-04-01.txt)**  
+- **Screenshot: API Endpoints Execution**
+  
+<img width="1511" alt="Image" src="https://github.com/user-attachments/assets/a8f65062-1f56-455c-8f65-b27a799fb746" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/7641e225-a3df-4bb8-8ca9-2bcf40827070" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/b7683bec-5f04-410f-b0a7-de672409bde2" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/a68c8358-242b-4d78-a3fb-e040ddb8a63b" />
+
+<img width="1479" alt="Image" src="https://github.com/user-attachments/assets/b9e8b2b5-91ab-408e-a597-7754cf8a613a" />
+
+---
+ 
+- **Screenshots from website**
+  
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/29f022a5-f54a-4218-b00d-67f36203b975" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/5142e201-77f5-4572-ab5f-766306993ef1" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/c6d99b9a-52a6-4de9-98c3-d5b674f0ae2b" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/6fb7592b-d0b7-4cc2-8a8d-b4cdadf2f197" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/01a50c9a-9ca8-4b80-a22a-ba440e2d8cf9" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/ef551992-42f5-4cb1-a8a5-d532dc40709c" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/292b36a5-0663-4005-a516-e2f53d08797c" />
+
+<img width="1512" alt="Image" src="https://github.com/user-attachments/assets/eec219b0-6cc6-45ff-8d8b-90c5ad8d04c5" />
 
 ---
 

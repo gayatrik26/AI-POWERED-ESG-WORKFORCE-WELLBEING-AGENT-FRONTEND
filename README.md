@@ -45,6 +45,8 @@ backend/
 │── .env
 
 ```
+
+## Backend repo link - https://github.com/gayatrik26/AI-POWERED-ESG-WORKFORCE-WELLBEING-AGENT-BACKEND
 ## Frontend Architecture
 The frontend is built with **React** , providing an interactive **HR dashboard**.
 

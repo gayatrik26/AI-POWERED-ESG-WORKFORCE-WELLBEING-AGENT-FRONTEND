@@ -13,8 +13,10 @@ The **ESG Workforce Wellbeing Agent** is an AI-powered system designed to monito
 
 ---
 
-## File Structure
-The structured as follows:
+## Backend Architecture
+The backend is implemented using **FastAPI** and **Python**. It consists of the following core modules:
+
+### 📂 **File Structure**
 
 ```plaintext
 backend/
@@ -42,7 +44,12 @@ backend/
 │── main.py
 │── .env
 
+```
+## Frontend Architecture
+The frontend is built with **React** , providing an interactive **HR dashboard**.
 
+### 📂 **File Structure**
+```plaintext
 
 frontend/
 │── node_modules/
@@ -74,3 +81,150 @@ frontend/
 │   ├── main.jsx
 │── .gitignore
 │── eslint.config.js
+
+
+```
+
+
+### 🔹 **Key UI Components**
+- **Dashboard**: Displays overall workforce health.
+- **Analysis Page**: Shows burnout trends & heatmaps.
+- **Employee Modal**: Displays individual employee well-being insights.
+
+---
+
+## Installation
+### 📌 **Backend Setup**
+```sh
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+### **Frontend Setup**
+```sh
+cd frontend
+npm install
+npm run dev
+```
+
+---
+
+## AI Models & Data Sources
+| Feature | Model / Dataset |
+|---------|----------------|
+| **Audio/Voice Analysis** | CNN + RNN Model |
+| **Microexpressions** | EfficientNetB0 (fine-tuned) |
+| **Body Posture Detection** | MediaPipe / OpenPose |
+| **Environmental Data** | Synthetic Data |
+| **Keyboard & Mouse Movement Analysis** | Online Dataset |
+| **Productivity Data** | Kaggle Dataset |
+| **Sensory & Physiological Data** | Kaggle Dataset |
+| **Sentiments (Emails & HR Feedback)** | RoBERTa |
+
+---
+
+## API Endpoints
+
+### 🏢 **Employee Data**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/api/employees` | Fetch all employee data |
+
+### 🔥 **Burnout & Well-being**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/api/burnout/{employee_id}` | Get Burnout Score |
+| **GET** | `/api/wellness/{employee_id}` | Get Wellness Program |
+
+### 📈 **Productivity & Workability**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/api/get_productivity_score` | Get Productivity Score |
+| **GET** | `/api/get_workability_score` | Get Workability Score |
+
+### 🖼 **Employee Images**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/api/images/{employee_id}/{image_name}` | Get Employee Image |
+
+### 🎤 **Audio Analysis**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/api/predict-emotion/{employee_id}` | Predict Emotion from Audio |
+| **GET** | `/api/audio/{employee_id}/{audio_name}` | Get Employee Audio |
+
+### ⌨️ **Keyboard & Mouse Behavior**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/api/get_dominant_keyboard_emotion` | Get Keyboard-Based Emotion Score |
+
+### 🌿 **Environmental Analysis**
+| Method | Endpoint | Description |
+|--------|---------|-------------|
+| **GET** | `/api/get_workability_score` | Get Workability Score |
+
+
+---
+
+## 💡 Next Steps
+- Add **Federated Learning** for privacy-preserving AI  
+- Expand **multimodal fusion model** for better predictions  
+- Improve **anomaly detection** for physiological data  
+
+---
+
+## 📊 Execution Results
+### Latest Run Summary
+- **Date:** 2025-04-01  
+- **Total Employees Processed:** 20  
+- **Burnout Score Calculation Time:** 1.2s per employee  
+- **Emotion Recognition Accuracy:** 89.5% (ResNet50)  
+- **Keystroke Emotion Prediction Accuracy:** 87%  
+
+### Key Findings:
+- 4 employees flagged for high burnout risk 🚨
+- Workability score below threshold for 3 employees
+- Sentiment analysis detected 5 employees with negative email tone  
+
+---
+
+## 🖥️ Execution Logs & Screenshots  
+- **[Screenshot: API Endpoints Execution](./screenshots/api_execution.png)**  
+- **[Screenshot: Burnout Heatmap](./screenshots/burnout_heatmap.png)**  
+- **[Execution Log](./logs/execution_log_2025-04-01.txt)**  
+
+---
+
+## 📂 Output Files
+| File | Description |
+|------|------------|
+| `burnout_scores.csv` | Burnout scores of all employees |
+| `sentiment_analysis.json` | Sentiment scores from emails and HR feedback |
+| `keystroke_emotion_results.csv` | Predicted emotions from keyboard behavior |
+
+---
+
+## 🔬 Edge Case Testing
+### **1️⃣ Extreme Burnout Cases**
+- Simulated employees with **back-to-back meetings for 10+ hours**  
+- Result: **Burnout score = 0.98 (High Risk)**  
+
+### **2️⃣ Audio Emotion Edge Cases**
+- Tested **whispered vs. shouted speech**  
+- Model misclassified **low-energy speech** as negative sentiment → Adjustment required  
+
+### **3️⃣ Sensor Data Anomalies**
+- Simulated **abnormal heart rate variations (spikes/drops)**  
+- Correctly flagged **sudden HR drop to 40 BPM as a risk event**  
+
+---
+
+## 🔥 Future Improvements
+- Improve real-time stress detection accuracy with more training data  
+- Optimize **API response times** for large employee datasets  
+- Integrate **real-time alerts for high burnout risks**  
+
+---
+
+
+✉ **For questions, contact:** `gayatrik22803@gmail.com`

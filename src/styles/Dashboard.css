@@ -1,0 +1,140 @@
+/* 🌍 Dashboard Container */
+.dashboard {
+  /* background: #f5f2f2; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  /* background-color: #80b7ed; */
+  background-image: url("/Users/kdn_aigayatrikadam/Desktop/Projects/Project-4/ESG Wellbeing Agent/frontend/src/assets/dashboard-bg.webp");
+  background-Size: "cover";
+  background-Position: "center";
+  color: #fff;
+}
+
+/* 🏷️ Title */
+.dashboard-title {
+  /* color: #000; */
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* 🔀 Sorting Button */
+.sort-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.sort-button {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.sort-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 255, 130, 0.4);
+}
+
+/* 📦 Employee Grid */
+
+.employee-grid {
+  display: grid;
+  /* flex-direction: column; */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  /* padding: 20px; */
+  margin: 10px;
+  transition: opacity 0.6s ease-in-out;
+  height: 500px;
+}
+
+/* 🔄 Loading State */
+.loading-container {
+  text-align: center;
+  color: #fff;
+}
+
+.loading-spinner {
+  border: 6px solid rgba(255, 255, 255, 0.2);
+  border-top: 6px solid #f39c12;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-container p {
+  color: #f39c12;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* 🚨 Error Message */
+.error-message {
+  color: #e74c3c;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 🆕 Mobile Optimization */
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 2rem;
+  }
+
+  .sort-button {
+    font-size: 0.9rem;
+    /* padding: 10px 16px; */
+  }
+
+  /* .employee-grid {
+    grid-template-columns: 1fr;
+  } */
+
+  .workability-score-container {
+    width: 90%;
+    /* padding: 15px 25px; */
+  }
+
+  .workability-score-container h2 {
+    font-size: 20px;
+  }
+
+  .workability-score-container p {
+    font-size: 18px;
+  }
+}
+
+.dashboard-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

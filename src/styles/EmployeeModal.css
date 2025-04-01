@@ -1,0 +1,73 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background: rgba(96, 96, 96, 0.6); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #222;
+    color: white;
+    padding: 50px;
+    gap: 20px;
+    border-radius: 10px;
+    width: 800px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background-image: url("/Users/kdn_aigayatrikadam/Desktop/Projects/Project-4/ESG Wellbeing Agent/frontend/src/assets/dashboard-bg.webp");
+  background-Size: "cover";
+  background-Position: "center";
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .modal-metrics p {
+    background: rgba(135, 133, 133, 0.1);
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px 0;
+    display: flex;
+  }
+  
+  .modal-section {
+    margin-top: 15px;
+  }
+  
+  h4 {
+    color: #f39c12;
+    margin-bottom: 5px;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+    color: #aaa;
+  }
+  
+  @media (max-width: 600px) {
+    .modal-content {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+  
